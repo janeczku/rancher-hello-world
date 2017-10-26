@@ -1,0 +1,10 @@
+version: '2'
+services:
+  web:
+    image: janeczku/demo-app:v1.0.1
+  redis:
+    image: redis
+  loadbalancer:
+    image: rancher/lb-service-haproxy
+    ports:
+    - 8090
